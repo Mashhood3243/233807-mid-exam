@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Globalization;
 
 namespace VP_mid_paper
 {
 
-    
+
 
     abstract class Society
     {
@@ -19,7 +19,8 @@ namespace VP_mid_paper
             }
             Console.WriteLine("\n");
         }
-        public Society(string n,string cont) {
+        public Society(string n, string cont)
+        {
             list_activities = new List<string>();
             name = n;
             contact = cont;
@@ -28,7 +29,7 @@ namespace VP_mid_paper
         public virtual void add_funds(int funds) { }
 
 
-       
+
 
 
 
@@ -47,11 +48,12 @@ namespace VP_mid_paper
         //}
 
 
-        
+
         public void list_events()
         {
             printwithDelay("Printing all events of society ...\n");
-            foreach (var activity in list_activities) {
+            foreach (var activity in list_activities)
+            {
 
                 printwithDelay(activity);
 
@@ -64,7 +66,7 @@ namespace VP_mid_paper
 
 
 
-      public virtual  void display()
+        public virtual void display()
         {
             printwithDelay("Displaying All Society Details!\n");
             Console.WriteLine("Society Name: ", name);
@@ -75,7 +77,7 @@ namespace VP_mid_paper
         }
 
 
-       
+
 
 
 
@@ -84,13 +86,13 @@ namespace VP_mid_paper
 
 
     }
-    class FundedSociety:Society
+    class FundedSociety : Society
     {
 
         //public FundedSociety():base() {
 
         //}
-      
+
         private double fundingAmount;
         public override void add_funds(int funds)
         {
@@ -105,14 +107,15 @@ namespace VP_mid_paper
             fundingAmount = d;
         }
 
-       public FundedSociety(string n,string c): base(n,c) {
+        public FundedSociety(string n, string c) : base(n, c)
+        {
             fundingAmount = 0;
         }
 
-        public override void  display()
+        public override void display()
         {
             printwithDelay("Displaying All Society Details!\n");
-            Console.WriteLine("Society Name: ",name);
+            Console.WriteLine("Society Name: ", name);
             Console.WriteLine("Society Contact: ", contact);
             Console.WriteLine("Society Funds: ", fundingAmount);
             printwithDelay("Printing all events of Society \n");
@@ -124,14 +127,15 @@ namespace VP_mid_paper
 
 
     }
-     class NonFundedSociety : Society {
+    class NonFundedSociety : Society
+    {
 
-      public  NonFundedSociety(string n, string c) : base(n, c)
+        public NonFundedSociety(string n, string c) : base(n, c)
         {
         }
 
 
-      public override void display()
+        public override void display()
         {
             printwithDelay("Displaying All Society Details!\n");
             Console.WriteLine("Society Name: ", name);
@@ -193,18 +197,18 @@ namespace VP_mid_paper
             contactInfo = val;
         }
 
-      public  void Get_values()
+        public void Get_values()
         {
             printwithDelay("<====Enter Details===> ");
             printwithDelay("Enter Name: ");
             string? buffer = Console.ReadLine();
-            if(buffer == null )
+            if (buffer == null)
             {
                 Get_values();
             }
             else
             {
-              name = buffer;
+                name = buffer;
                 Console.Write("Enter Contact: ");
                 buffer = Console.ReadLine();
                 contactInfo = buffer;
@@ -271,7 +275,7 @@ namespace VP_mid_paper
 
         }
         //   public void 
-        public  void initialize()
+        public void initialize()
         {
             printwithDelay("First Enter Some values for ClubRoles! \nFor President");
             president = new ClubRole();
@@ -289,7 +293,7 @@ namespace VP_mid_paper
             financeSecretary.Get_values();
         }
         public List<Society> list_society = new List<Society>();
-      public  StudentClub()
+        public StudentClub()
         {
             List<Society> list_society = new List<Society>();
             president = new ClubRole();
@@ -299,9 +303,9 @@ namespace VP_mid_paper
             budget = 0.0;
 
         }
-        public void add_funds(string n,String f)
+        public void add_funds(string n, String f)
         {
-            
+
 
             foreach (var s in list_society)
             {
@@ -311,9 +315,9 @@ namespace VP_mid_paper
                     //                    s.add_funds();
 
                     return;
-                    
+
                 }
-                
+
 
 
             }
@@ -354,7 +358,7 @@ namespace VP_mid_paper
 
 
 
-        public void dispenseFunds(string n,int del)
+        public void dispenseFunds(string n, int del)
         {
 
 
@@ -369,7 +373,7 @@ namespace VP_mid_paper
             }
             else
             {
-                
+
                 if (buff == 1)
                 {
                     printwithDelay("Enter Name: ");
@@ -401,7 +405,7 @@ namespace VP_mid_paper
 
             }
         }
-    public    void display_society(string s)
+        public void display_society(string s)
         {
             foreach (var k in list_society)
             {
@@ -428,17 +432,17 @@ namespace VP_mid_paper
 
 
 
-        public  void displaySocieties()
+        public void displaySocieties()
+        {
+            printwithDelay("Printing all Societies Currently in StudentClub! ...\n");
+            foreach (var s in list_society)
             {
-                printwithDelay("Printing all Societies Currently in StudentClub! ...\n");
-                foreach (var s in list_society)
-                {
-                    s.display();
+                s.display();
                 return;
-                }
-
-                printwithDelay("Displayed All Societies! \n");
             }
+
+            printwithDelay("Displayed All Societies! \n");
+        }
 
 
         public void display_events(string k)
@@ -449,7 +453,7 @@ namespace VP_mid_paper
                 if (a.name == k)
                 {
                     a.display();
-                   
+
 
                     return;
 
@@ -473,7 +477,7 @@ namespace VP_mid_paper
 
 
 
-    
+
 
 
 
@@ -508,19 +512,18 @@ namespace VP_mid_paper
             printwithDelay("\n\n\tSTUDENT CLUB MANAGEMENT SYSTEM ");
             printwithDelay("-------------------------------------------------");
             printwithDelay("1. Register a New Society ");
-            printwithDelay("2. Allocate Funding to Societies "); 
-            printwithDelay("3. Register an Event for a Society "); 
+            printwithDelay("2. Allocate Funding to Societies ");
+            printwithDelay("3. Register an Event for a Society ");
             printwithDelay("4. Display Society Funding Information ");
             printwithDelay("5. Display Event for a Society ");
             printwithDelay("6  Exit ");
-           
-        }
-        static void Main(string[] args)
-        {
-            StudentClub University_Std = new StudentClub();
-           University_Std.initialize();
 
-          menu();
+        }
+        static StudentClub University_Std = new StudentClub();
+
+        static public void run_code()
+        {
+            menu();
             printwithDelay("\nEnter Option: ");
             string? option = Console.ReadLine();
             if (option == null)
@@ -534,20 +537,21 @@ namespace VP_mid_paper
                 {
                     case "1":
                         University_Std.registerSociety();
+                        run_code();
                         break;
                     case "2":
                         printwithDelay("Enter Name of Society ");
                         string? name = Console.ReadLine();
                         string? funds = Console.ReadLine();
                         University_Std.add_funds(name, funds);
-
+                        run_code();
                         break;
                     case "3":
                         printwithDelay("Enter Name of Society ");
                         string? n = Console.ReadLine();
                         printwithDelay("Enter Event Detail: \n");
                         string? e = Console.ReadLine();
-
+                        run_code();
 
 
                         break;
@@ -577,13 +581,14 @@ namespace VP_mid_paper
 
                         }
 
-
+                        run_code();
 
 
 
                         break;
                     case "6":
-                        break;
+                        return;
+
 
                     default:
                         printwithDelay("Invalid Option Provided! \nProgram exiting!");
@@ -591,9 +596,19 @@ namespace VP_mid_paper
 
 
                 }
+                return;
+
+
+            }
 
 
 
+
+
+            static void Main(string[] args)
+            {
+                University_Std.initialize();
+                run_code();
 
 
 
@@ -603,3 +618,4 @@ namespace VP_mid_paper
         }
     }
 }
+
