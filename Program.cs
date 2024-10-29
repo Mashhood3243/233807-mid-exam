@@ -69,8 +69,8 @@ namespace VP_mid_paper
         public virtual void display()
         {
             printwithDelay("Displaying All Society Details!\n");
-            Console.WriteLine("Society Name: ", name);
-            Console.WriteLine("Society Contact: ", contact);
+            Console.WriteLine("Society Name: "+name);
+            Console.WriteLine("Society Contact: "+contact);
             printwithDelay("Printing all events of Society \n");
             list_events();
 
@@ -115,9 +115,9 @@ namespace VP_mid_paper
         public override void display()
         {
             printwithDelay("Displaying All Society Details!\n");
-            Console.WriteLine("Society Name: ", name);
-            Console.WriteLine("Society Contact: ", contact);
-            Console.WriteLine("Society Funds: ", fundingAmount);
+            Console.WriteLine("Society Name: "+name);
+            Console.WriteLine("Society Contact: "+contact);
+            Console.WriteLine("Society Funds: "+fundingAmount);
             printwithDelay("Printing all events of Society \n");
             list_events();
 
@@ -138,8 +138,8 @@ namespace VP_mid_paper
         public override void display()
         {
             printwithDelay("Displaying All Society Details!\n");
-            Console.WriteLine("Society Name: ", name);
-            Console.WriteLine("Society Contact: ", contact);
+            Console.WriteLine("Society Name: "+name);
+            Console.WriteLine("Society Contact: "+contact);
             printwithDelay("Printing all events of Society \n");
             list_events();
 
