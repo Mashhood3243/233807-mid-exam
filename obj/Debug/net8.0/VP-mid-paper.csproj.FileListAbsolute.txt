@@ -1,0 +1,14 @@
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\bin\Debug\net8.0\VP-mid-paper.exe
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\bin\Debug\net8.0\VP-mid-paper.deps.json
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\bin\Debug\net8.0\VP-mid-paper.runtimeconfig.json
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\bin\Debug\net8.0\VP-mid-paper.dll
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\bin\Debug\net8.0\VP-mid-paper.pdb
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\VP-mid-paper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\VP-mid-paper.AssemblyInfoInputs.cache
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\VP-mid-paper.AssemblyInfo.cs
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\VP-mid-paper.csproj.CoreCompileInputs.cache
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\VP-mid-paper.dll
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\refint\VP-mid-paper.dll
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\VP-mid-paper.pdb
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\VP-mid-paper.genruntimeconfig.cache
+C:\Users\MASHHOOD FARQALEET\source\repos\VP-mid-paper\obj\Debug\net8.0\ref\VP-mid-paper.dll
