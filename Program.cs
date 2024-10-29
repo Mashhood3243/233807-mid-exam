@@ -599,23 +599,22 @@ namespace VP_mid_paper
                 return;
 
 
-            }
-
-
-
-
-
-            static void Main(string[] args)
-            {
-                University_Std.initialize();
-                run_code();
-
-
 
             }
+        }
+
+
+
+        static void Main(string[] args)
+        {
+            University_Std.initialize();
+            run_code();
+
 
 
         }
+    
+        }
     }
-}
+
 
