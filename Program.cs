@@ -363,7 +363,7 @@ namespace VP_mid_paper
         {
             printwithDelay("Choose option\n 1. Funded Society\n2.NonFunded Society \n");
             int buff = Convert.ToInt32(Console.ReadLine());
-            if (buff != null)
+            if (buff == null)
             {
                 registerSociety();
             }
